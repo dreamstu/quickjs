@@ -4,9 +4,10 @@
 /.gitignore
 /test
 /.tmp
-
+/logs
 .DS_Store
-
+logs
+qconf.js
 de_modules
 npm-debug.log
 tmp
