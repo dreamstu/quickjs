@@ -57,7 +57,7 @@ quick.cli.help = function(){
     ]);
     console.log(content.join('\n'));
 };
-quick.cli.help.commands = [ 'build','serve' ];
+quick.cli.help.commands = [ 'init','build','serve' ];
 
 quick.require = function(){
     var path;
