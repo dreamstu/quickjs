@@ -1,4 +1,10 @@
+var path = require('path');
 var quick = module.exports = require('quick-plugins');
+
+//exports initConfig
+quick.initConfig = function(config){
+    quick.config = quick.util.merge(quick.config,config || {});
+};
 
 //exports cli object
 quick.cli = {};
