@@ -65,30 +65,6 @@ quick.cli.help = function(){
 };
 quick.cli.help.commands = [ 'init','build','serve' ];
 
-quick.require = function(){
-    var path;
-    var name = Array.prototype.slice.call(arguments, 0).join('-');
-    if(quick.require._cache.hasOwnProperty(name)) return quick.require._cache[name];
-    var names = [];
-    for(var i = 0, len = quick.require.prefixes.length; i < len; i++){
-        try {
-            var pluginName = quick.require.prefixes[i] + '-' + name;
-            names.push(pluginName);
-            path = require.resolve(pluginName);
-            try {
-                return quick.require._cache[name] = require(pluginName);
-            } catch (e){
-                quick.log.error('load plugin [' + pluginName + '] error : ' + e.message);
-            }
-        } catch (e){}
-    }
-    quick.log.error('unable to load plugin [' + names.join('] or [') + ']');
-};
-
-quick.require._cache = {};
-
-quick.require.prefixes = ['quick'];
-
 var pad = function(str, len, fill, pre){
     if(str.length < len){
         fill = (new Array(len)).join(fill || ' ');
@@ -118,7 +94,10 @@ quick.cli.run = function(argv){
     } else {
         //register command
         var commander = quick.cli.commander = require('commander');
-        var cmd = quick.require('command', argv[2]);
+        var cmd = quick.require('command', first);
+        if(!cmd){
+            return;
+        }
         cmd.register(
             commander
                 .command(cmd.name || first)
