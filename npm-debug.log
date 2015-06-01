@@ -1,0 +1,113 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.35
+4 verbose publish [ '.' ]
+5 verbose cache add [ '.', null ]
+6 verbose cache add name=undefined spec="." args=[".",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: '.',
+7 verbose parsed url   path: '.',
+7 verbose parsed url   href: '.' }
+8 silly lockFile 3a52ce78- .
+9 verbose lock . /home/johnkim/.npm/3a52ce78-.lock
+10 verbose tar pack [ '/home/johnkim/.npm/quickjs/0.1.17/package.tgz', '.' ]
+11 verbose tarball /home/johnkim/.npm/quickjs/0.1.17/package.tgz
+12 verbose folder .
+13 info prepublish quickjs@0.1.17
+14 silly lockFile 1f1177db-tar tar://.
+15 verbose lock tar://. /home/johnkim/.npm/1f1177db-tar.lock
+16 silly lockFile ef0a62a3-m-npm-quickjs-0-1-17-package-tgz tar:///home/johnkim/.npm/quickjs/0.1.17/package.tgz
+17 verbose lock tar:///home/johnkim/.npm/quickjs/0.1.17/package.tgz /home/johnkim/.npm/ef0a62a3-m-npm-quickjs-0-1-17-package-tgz.lock
+18 silly lockFile 1f1177db-tar tar://.
+19 silly lockFile 1f1177db-tar tar://.
+20 silly lockFile ef0a62a3-m-npm-quickjs-0-1-17-package-tgz tar:///home/johnkim/.npm/quickjs/0.1.17/package.tgz
+21 silly lockFile ef0a62a3-m-npm-quickjs-0-1-17-package-tgz tar:///home/johnkim/.npm/quickjs/0.1.17/package.tgz
+22 silly lockFile 23ecf106-hnkim-npm-quickjs-0-1-17-package /home/johnkim/.npm/quickjs/0.1.17/package
+23 verbose lock /home/johnkim/.npm/quickjs/0.1.17/package /home/johnkim/.npm/23ecf106-hnkim-npm-quickjs-0-1-17-package.lock
+24 silly lockFile 23ecf106-hnkim-npm-quickjs-0-1-17-package /home/johnkim/.npm/quickjs/0.1.17/package
+25 silly lockFile 23ecf106-hnkim-npm-quickjs-0-1-17-package /home/johnkim/.npm/quickjs/0.1.17/package
+26 silly lockFile 3a52ce78- .
+27 silly lockFile 3a52ce78- .
+28 silly publish { name: 'quickjs',
+28 silly publish   version: '0.1.17',
+28 silly publish   description: 'quick front-end structure solution.',
+28 silly publish   author: { name: 'JohnKim', email: 'cjxsgn@163.com' },
+28 silly publish   homepage: 'http://q.quickjs.org/',
+28 silly publish   repository: { type: 'git', url: 'https://github.com/dreamstu/quickjs.git' },
+28 silly publish   keywords: [ 'quick', 'quickjs' ],
+28 silly publish   engines: { node: '>=0.8.0' },
+28 silly publish   main: 'main.js',
+28 silly publish   bin: { quick: 'bin/quick' },
+28 silly publish   dependencies:
+28 silly publish    { grunt: '~0.4.1',
+28 silly publish      'grunt-build-seajs': '~0.0.3',
+28 silly publish      'grunt-contrib-watch': '~0.3.1',
+28 silly publish      'load-grunt-tasks': '^0.4.0',
+28 silly publish      'time-grunt': '^0.4.0',
+28 silly publish      commander: '~2.5.0',
+28 silly publish      shelljs: '~0.3.0',
+28 silly publish      prompt: '0.2.6',
+28 silly publish      'quick-plugins': '>=1.2.24',
+28 silly publish      'quick-command-build': '>=0.1.26',
+28 silly publish      'quick-command-serve': '>=0.0.22',
+28 silly publish      'quick-command-init': '>=0.0.4',
+28 silly publish      colors: '0.6.2' },
+28 silly publish   readme: '## Quickjs 构建工具\n\n----\n\n###如何构建\n\n```\n\n    $ sudo -i\n\n    $ 输入密码\n\n    $ sudo quick\n```\n\n###详细说明\n',
+28 silly publish   readmeFilename: 'README.md',
+28 silly publish   gitHead: '746f19689ba825435b44856f89c92696a4c54fb3',
+28 silly publish   bugs: { url: 'https://github.com/dreamstu/quickjs/issues' },
+28 silly publish   _id: 'quickjs@0.1.17',
+28 silly publish   scripts: {},
+28 silly publish   _shasum: '8ab94569e2cde5d134ee6e493ac4024cbaa8fc1b',
+28 silly publish   _from: '.' }
+29 verbose request where is /quickjs
+30 verbose request registry https://registry.npmjs.org/
+31 verbose request id 7aade133eb6c16f1
+32 verbose url raw /quickjs
+33 verbose url resolving [ 'https://registry.npmjs.org/', './quickjs' ]
+34 verbose url resolved https://registry.npmjs.org/quickjs
+35 verbose request where is https://registry.npmjs.org/quickjs
+36 info trying registry request attempt 1 at 12:06:30
+37 http PUT https://registry.npmjs.org/quickjs
+38 http 403 https://registry.npmjs.org/quickjs
+39 verbose headers { 'content-type': 'application/json',
+39 verbose headers   'cache-control': 'max-age=60',
+39 verbose headers   'content-length': '96',
+39 verbose headers   'accept-ranges': 'bytes',
+39 verbose headers   date: 'Mon, 01 Jun 2015 04:06:32 GMT',
+39 verbose headers   via: '1.1 varnish',
+39 verbose headers   connection: 'keep-alive',
+39 verbose headers   'x-served-by': 'cache-fra1222-FRA',
+39 verbose headers   'x-cache': 'MISS',
+39 verbose headers   'x-cache-hits': '0',
+39 verbose headers   'x-timer': 'S1433131591.455150,VS0,VE746' }
+40 error publish Failed PUT 403
+41 error Error: "You cannot publish over the previously published version 0.1.17." : quickjs
+41 error     at RegClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:308:14)
+41 error     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:246:65)
+41 error     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:236:22)
+41 error     at Request.emit (events.js:98:17)
+41 error     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1142:14)
+41 error     at Request.emit (events.js:117:20)
+41 error     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1096:12)
+41 error     at IncomingMessage.emit (events.js:117:20)
+41 error     at _stream_readable.js:944:16
+41 error     at process._tickCallback (node.js:442:13)
+42 error If you need help, you may report this *entire* log,
+42 error including the npm and node versions, at:
+42 error     <http://github.com/npm/npm/issues>
+43 error System Linux 3.13.0-53-generic
+44 error command "/usr/local/bin/node" "/usr/local/bin/npm" "publish"
+45 error cwd /home/johnkim/Documents/git/quick/quickjs
+46 error node -v v0.10.35
+47 error npm -v 1.4.28
+48 verbose exit [ 1, true ]

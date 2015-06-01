@@ -1,6 +1,6 @@
 {
   "name": "quickjs",
-  "version": "0.1.17",
+  "version": "0.1.18",
   "description":"quick front-end structure solution.",
   "author": "JohnKim <cjxsgn@163.com>",
   "homepage": "http://q.quickjs.org/",
@@ -29,7 +29,7 @@
     "prompt":"0.2.6",
     "quick-plugins":">=1.2.24",
     "quick-command-build": ">=0.1.26",
-    "quick-command-serve": ">=0.0.21",
+    "quick-command-serve": ">=0.0.22",
     "quick-command-init": ">=0.0.4",
     "colors":"0.6.2"
   }
